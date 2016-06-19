@@ -1,6 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'com.google.gms.google-services'
-
 
 android {
     compileSdkVersion 21
@@ -20,7 +18,7 @@ android {
         }
 
         buildTypes.each {
-                   it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY','"811dd0b7d246611962958c063e1b4bb7"'
+                   it.buildConfigField 'String', 'OPEN_WEATHER_MAP_API_KEY',MyTMDBApiKey
                }
     }
 
@@ -34,6 +32,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:21.0.3'
     compile 'com.android.support:support-v4:21.0.3'
     compile 'com.github.bumptech.glide:glide:3.5.2'
-    compile 'com.google.android.gms:play-services:9.0.0'
+    //compile 'com.google.android.gms:play-services:8.3.0'
 
 }
