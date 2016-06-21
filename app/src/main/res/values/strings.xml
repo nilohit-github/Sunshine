@@ -119,7 +119,7 @@
         <string name="pref_enable_notifications_default" translatable="false">true</string>
 
     <!-- Empty Weather Database -->
-    <string name="empty_forecast_list">No Weather Information Available</string>
+    <string name="empty_forecast_list">No Weather Information Available.</string>
     <string name="empty_forecast_list_no_network">No weather information available. The network is not available to fetch weather data.</string>
     <string name="empty_forecast_list_server_down">No weather information available. The server is not returning data.</string>
     <string name="empty_forecast_list_server_error">No weather information available. The server is not returning valid data. Please check for an updated version of Sunshine.</string>
@@ -192,6 +192,12 @@
     <string name="condition_962">Hurricane</string>
 
     <string name="condition_unknown">Unknown (<xliff:g id="low">%1$s</xliff:g>)</string>
+
+    <!-- Used to form a severe weather alert that reads "Heads up: <weather> in <location>!" -->
+    <string name="gcm_weather_alert">Heads up: %1$s in %2$s!</string>
+    // TODO: Get the SenderID from the Developer Console
+
+
 
 
 
