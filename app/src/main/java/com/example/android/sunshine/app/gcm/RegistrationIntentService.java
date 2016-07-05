@@ -20,7 +20,6 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.example.android.sunshine.app.MainActivity;
 import com.example.android.sunshine.app.R;
@@ -49,9 +48,11 @@ public class RegistrationIntentService extends IntentService {
 
                 // TODO: gcm_default sender ID comes from the API console
                 String senderId = getString(R.string.gcm_defaultSenderId);
+
                 if ( senderId.length() != 0 ) {
                     String token = instanceID.getToken(senderId,
                             GoogleCloudMessaging.INSTANCE_ID_SCOPE, null);
+                    Log.i(TAG, "my token:: " + token);
                     sendRegistrationToServer(token);
                 }
 
